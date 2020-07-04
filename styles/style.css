@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.dark-mode{
+  background-color: #222;
+  color: #fff;
+}
+h1{
+  font-size: 36px;
+}
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.2;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.site-header{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.promo-video{
+  text-align: center;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+  border: 5px solid gold;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.title{
+  margin-bottom: 5px;
+}
+.container{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contacts-list a{
+  border-bottom: 1px solid gold;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ul li{
+  margin-bottom: 2px;
+}
+.contacts-list a:hover{
+  background-color: gold;
+}
+.dark-mode .contacts-list a{
+  color: gold;
+}
+.dark-mode .contacts-list a:hover{
+  color: #222;
+}
+.courses-contacts{
+  display: flex;
+  justify-content: space-around;
+}
+.theme-controls{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+  display: flex;
+}
+.theme-controls button{
+  cursor: pointer;
+  height: 35px;
+  border: 1px solid #000;
+}
+.theme-controls button + button{
+  margin-left: 10px;
+}
+.dark-mode .theme-controls button{
+  border: 1px solid white;
+  background-color: #222;
+  color: white;
+}
+.map iframe{
+  width: 100%;
+  border: 1px solid black;
+}
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
